@@ -45,12 +45,12 @@ btn.addEventListener("click",async (evt) =>{
         amount.value ="1";
     }
     console.log(fromCurr.value,toCurr.value);
-    /*const URL = `${Base_URL}/${fromCurr.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    const URL = `${Base_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
      let response = await fetch(URL);
      let data = await response.json();
      console.log(data);
      let rate = data[toCurr.value.toLowerCase()];
      console.log(rate);
      let finalAmount = amountVal * rate;
-     msg.innerText = `${amountVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;//10 USD = 832.911 INR */
+     msg.innerText = `${amountVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;//10 USD = 832.911 INR 
 });
